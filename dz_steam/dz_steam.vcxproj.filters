@@ -1,2 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" />
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{d50fee91-7a7f-4c16-8134-c8ece150fa2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Libs">
+      <UniqueIdentifier>{0514cf46-3945-4660-bc74-e392160e9e59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Entities">
+      <UniqueIdentifier>{016a955e-8a9e-45da-a280-4636dabde7c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Entities\Steam">
+      <UniqueIdentifier>{9d5bb058-2391-413f-85d8-3664f303806b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{7ccfd55f-80d1-4f0f-b6e9-539c259e6be9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Menu">
+      <UniqueIdentifier>{b8e3d41d-bfe0-40af-9a80-0ce6a475bd42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{34f2c54a-52f0-48d5-85f5-74cb8828ff4b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Core\Entities\Steam\Steam.h">
+      <Filter>Core\Entities\Steam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Core\Libs\Libs.h">
+      <Filter>Core\Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UI\Menu\Menu.h">
+      <Filter>UI\Menu</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Core\Entities\Steam\Steam.cpp">
+      <Filter>Core\Entities\Steam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Main\main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
